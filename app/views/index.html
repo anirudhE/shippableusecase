@@ -1,0 +1,36 @@
+<!--DOCTYPE html-->
+<html ng-app="shippable">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../libs/bootstrap/dist/css/bootstrap.min.css">
+        <!--library imports-->
+        <script src="../libs/jquery/dist/jquery.min.js"></script>
+        <script src="../libs/angular/angular.min.js"></script>
+        <script src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--angular module imports-->
+        <script src="../controllers/mainCtrl.js"></script>
+    </head>
+    <body ng-controller="MainController">
+        <div class="container">
+            <div class="jumbotron">
+                <form>
+                    <div class="input-group">
+                        <input type="url" name="" id="input1/(\w+)/\u\1/g" class="form-control" required="required" placeholder="search" ng-model="url">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-success" ng-click="getRepoIssues()">submit</button>
+                        </div>    
+                    </div>
+                </form>            
+            </div>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <ul class="list-group">
+                    <li class="list-group-item">Total number of open issues<span class="badge">{{totalIssues}}</span></li>
+                    <li class="list-group-item">Number of open issues that were opened in the last 24 hours<span class="badge">{{issues_24h}}</span></li> 
+                    <li class="list-group-item">Number of open issues that were opened more than 24 hours ago but less than 7 days ago<span class="badge">{{issues_24h_7d}}</span></li> 
+                    <li class="list-group-item">Number of open issues that were opened more than 7 days ago<span class="badge">{{issues_7d}}</span></li> 
+                </ul>
+            </div> 
+        </div>
+    </body>
+</html>
