@@ -21,7 +21,7 @@ angular.module('shippable', [])
                                     diff = todayInMs - createdDateInMs;
 
                                     if (diff <= (86400 * 1000)) $scope.issues_24h++;
-                                    else if (diff > (86400 * 1000) && diff < (86400 * 1000 * 7)) $scope.issues_24h_7d++;
+                                    else if (diff > (86400 * 1000) && diff <= (86400 * 1000 * 7)) $scope.issues_24h_7d++;
                                     else $scope.issues_7d++;
                                 }
                             }, function(reasonIssue) {
