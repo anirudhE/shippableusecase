@@ -1,6 +1,6 @@
 # shippableusecase
 
-* application is live@URL: http://shippableusecasebyanirudherabelly.azurewebsites.net/
+* application is live@URL: http://anirudherabelly.github.io/shippableusecase/
 * It is built using angularjs(for API call) and bootstrap(for styling).
 * Here all the time calculations are done in according with UTC format(i.e GMT) because we are considere only with the difference between times to know the status.
 * Firstly made a call to github api to get given repository details and from that extracted the total open issue count.
